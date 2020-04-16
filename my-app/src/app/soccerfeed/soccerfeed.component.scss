@@ -1,0 +1,25 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    //background-color: royalblue;
+}
+
+.titleAndEmbedPanel {
+    width: 100%;
+    margin-bottom: 20px;
+    //background-color: red;
+}
+
+// .a {
+//     width: 20px;
+//     background-color: lime;
+// }
+
+ .feedTitle {
+    justify-content: center;
+}
+
+/* .feedEmbed {
+    
+} */
