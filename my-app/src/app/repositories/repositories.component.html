@@ -1,1 +1,6 @@
-<p>repositories works!</p>
+<h1>My Repositories</h1>
+
+<div *ngFor="let repo of reposData">
+    <a href="{{repo.html_url}}">{{repo.name}}</a>
+    <li>{{repo.description}}</li>
+</div>

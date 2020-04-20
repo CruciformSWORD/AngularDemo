@@ -24,4 +24,25 @@ export class HttpService {
       }
     );
   }
+  
+  getRepositories(){
+    return this.http.get(
+      'https://api.github.com/users/CruciformSWORD/repos'
+    );
+  }
+  
+  getNpsData(){
+    
+    let httpHeaders = new HttpHeaders().set(
+      'X-Api-Key',
+      'MMFeJ66DYw11emu79Tx8vYJSI9dgrmthvOhlEiy3'
+    );
+    
+    return this.http.get(
+      'https://developer.nps.gov/api/v1/parks',
+      {
+        headers: httpHeaders,
+      }
+    );
+  }
 }

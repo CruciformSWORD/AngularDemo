@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from '../http.service';
 
 @Component({
   selector: 'app-repositories',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RepositoriesComponent implements OnInit {
 
-  constructor() { }
+  reposData: Object;
+  
+  constructor(private _http: HttpService) { }
 
   ngOnInit(): void {
+    this._http.getRepositories().subscribe((data) => {
+      this.reposData = data;
+    })
   }
 
 }

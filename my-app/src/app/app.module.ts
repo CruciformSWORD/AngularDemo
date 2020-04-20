@@ -14,6 +14,7 @@ import { SafePipe } from './safe.pipe'
 
 //import {} from '@angular/cdk';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { NationalParksComponent } from './nationalparks/nationalparks.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     ListComponent,
     RepositoriesComponent,
     SoccerfeedComponent,
-    SafePipe
+    SafePipe,
+    NationalParksComponent
   ],
   imports: [
     BrowserModule,

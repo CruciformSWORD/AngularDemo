@@ -2,7 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
 
-$primary: rgb(111, 0, 255);
+$primary: rgb(0, 11, 114);
 
 body {
   margin: 0;
@@ -40,7 +40,9 @@ header {
         padding: 1em;
 
         &:hover {
-          background: darken($primary, 10%);
+          //background:  darken($primary, 10%);
+          background: #e8cc00;
+          color: #000000
         }
       }
     }

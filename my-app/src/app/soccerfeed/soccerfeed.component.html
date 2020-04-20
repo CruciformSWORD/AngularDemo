@@ -1,4 +1,17 @@
-<h2>Awesome soccer feed!</h2>
+<h1>The Beautiful Game</h1>
+
+<p>I am a pretty big soccer fan and you may catch me wearing jerseys from any number of leagues across the world.</p>
+
+<p>To be a big fan you have to stay up on the latest news so it probably comes as no surprise then that I have a preferred app for doing just that:</p>
+<a href="https://onefootball.com/">OneFootball</a>
+
+<p>I cannot regurgitate the insane amount of articles that they put out, otherwise I'd start up a competing service.  But the enthusiast in me would like to at least provide some content here for like-minded individuals.</p>
+<p>Enjoy!!</p>
+
+<p>Note:  I've consumed a free API that someone was kind enough to set up on RapidAPI.com for sharing game highlights and laid them out evenly using Angular's FlexLayout module here.  The embed divs and iframes were already returned by the api so I had to use Angular's [innerHtml] property and bypass the DomSanitizer to allow the content to be used.</p>
+
+<br>
+<h3>Highlights from around Europe</h3>
 
 <!-- <div class="flex-container" fxLayout="row">
     <div fxFlex="20%" class="a">1</div>
@@ -7,9 +20,9 @@
 </div> -->
 
 <div class="flex-container" fxLayout="row wrap" fxLayoutAlign="space-evenly center">
-  <div fxFlex="40%" *ngFor="let clip of soccerFeedData">
+  <div fxFlex="45%" *ngFor="let clip of soccerFeedData">
     <div class="titleAndEmbedPanel">
-      <div class="feedTitle">{{ clip.side1.name }} VS. {{ clip.side2.name }}</div>
+      <div class="feedTitle"><img >{{ clip.side1.name }} VS. {{ clip.side2.name }}</div>
       <div class="feedEmbed" [innerHTML]="clip.embed | safe: 'html'"></div>
     </div>
   </div>
